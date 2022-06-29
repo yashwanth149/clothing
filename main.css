@@ -9,6 +9,10 @@ body {
 
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Libre Bodoni', serif;
+}
+
 .flex1 {
     display: flex;
     align-items: center;
@@ -127,11 +131,9 @@ body {
 
 .container2 {
     background-image: url('https://images.unsplash.com/photo-1562572159-4efc207f5aff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZmVtYWxlJTIwbW9kZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60');
-    background-position: top;
     background-repeat: no-repeat;
     overflow: hidden;
     border-radius: 10px;
-    width: 500px;
     max-width:100%;
     height: 500px;
     background-size: cover;
@@ -171,9 +173,8 @@ body {
 
 .w3-bg {
     position: relative;
-    background-image: url("charan3.jpeg");
-    background-size: 430px;
-    background-position: center top;
+    background-image: url("https://images.unsplash.com/photo-1512850692650-c382e34f7fb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFsZSUyMG1vZGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
+    background-size: cover;
     /*https://images.unsplash.com/photo-1512850692650-c382e34f7fb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFsZSUyMG1vZGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60*/
 }
 
@@ -181,7 +182,7 @@ body {
     width: 100%;
     height: 70vh;
     background-image: url("https://wallpaperaccess.com/full/2224451.jpg");
-    background-size: 1300px;
+    background-size: cover;
     background-position: top right;
     background-repeat: no-repeat;
     margin-top: 3rem;
@@ -189,8 +190,8 @@ body {
 
 .info-offer {
     position: relative;
-    top: 30%;
-    left: 20%;
+    top: 20%;
+    left: 18%;
     font-family: 'Libre Bodoni', serif;
     color: #fff;
     display: inline-block;
@@ -198,7 +199,7 @@ body {
 }
 
 .info-offer h2{
-    font-size: 50px;
+    font-size: 58px;
 }
 
 .info-offer p {
@@ -213,31 +214,45 @@ body {
 }
 
 .ourgallery {
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 
 .ourgallery h2 {
     font-size: 32px;
     letter-spacing: 2px;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
+    margin: 0 0 .5rem 3rem;
 }
 
 .grid {
-    width: 92%;
+    width: 90%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    padding: 14px 2px;
 
 }
 
 .grid img {
     display: grid;
-    place-items: center;   
     max-width: 100%;
-    width: 370px;
-    margin-bottom: 18px;
+    width: 380px;
     border-radius: 2px;
+    opacity: 0.8;
+    transition: .2s opacity ease-in-out;
 }
 
-
+.cart:hover img {
+    opacity: 1;
+}
+.cart a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    bottom: 10px;
+    left: 32%;
+    transform: translate(-50%,-50%);
+    padding: 13px 68px;
+    background-color: #2e2e2e;
+    z-index: 0;
+}
