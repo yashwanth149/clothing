@@ -220,6 +220,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .ourgallery {
     margin-top: 6rem;
+    padding: 12px;
 }
 
 .ourgallery h2 {
@@ -239,19 +240,23 @@ h1,h2,h3,h4,h5,h6 {
 .grid .cart {
     border-radius: 2px;
     position: relative;
+    width: 370px;
+    height: auto;
     display: inline;
+    overflow: hidden;
 }
 
 .cart img {
-    width: 370px;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
     border-radius: 6px;
     display: block;
-    opacity: .7;
+    filter: grayscale(100%);
+    transition: all .4s ease-in-out;
 }
 .cart:hover img {
-    opacity: 1;
-    background-image: linear-gradient(rgba(0,0,0,.1));
+    filter: grayscale(0%);
+    transform: scale(1.1);
 }
 
 .container-vertical-line {
@@ -289,18 +294,19 @@ h1,h2,h3,h4,h5,h6 {
 
 .cart:hover .vertical-line {
     transform: scaleY(1);
+    transition-delay: .2s;
 }
 
 .cart a {
     text-decoration: none;
     color: #fff;
     position: absolute;
-    bottom: -42px;
+    bottom: -12px;
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 13px 68px;
     background-color: #2e2e2e;
-    z-index: 0;
+    z-index: 99;
     border-radius: 3px;
 
 }
