@@ -214,8 +214,11 @@ h1,h2,h3,h4,h5,h6 {
 
 .info-offer button {
     border: none;
-    padding: 6px 15px;
-    border-radius: 2px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    box-shadow: 7px 6px 5px rgba(0 0 0/0.2);
 }
 
 .ourgallery {
@@ -306,7 +309,6 @@ h1,h2,h3,h4,h5,h6 {
     transform: translate(-50%,-50%);
     padding: 13px 68px;
     background-color: #2e2e2e;
-    z-index: 99;
     border-radius: 3px;
 
 }
@@ -330,10 +332,16 @@ footer {
     line-height: 26px;
     width: 200px;
 }
-
-
-.me a {
-    text-decoration: none;
+.me-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+}
+.me-info a {
     color: #fff;
+    text-decoration: none;
+    margin: 16px;
     font-size: 2rem;
 }
+
