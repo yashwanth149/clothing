@@ -382,7 +382,7 @@ footer {
         position: relative;
         z-index: 3;
         color: #fff;
-        top: 70%;
+        top: 84%;
         left: 20px;
         display: inline-block;
     }
@@ -496,14 +496,17 @@ footer {
         border-bottom: 2px solid orange;
     }
 
-    .respons-box span{
-        font-weight: bold;
+    .respons-box .font-normal{
+        font-weight: 700;
+        font-size: 38px;
+        color: red;
     }
 
     .respons-box p {
-        font-size: 28px;
-        font-weight: 100;
-        letter-spacing: 0;
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin-top: -12px;
     }
 
     .maincontainer {
