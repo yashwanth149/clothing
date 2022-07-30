@@ -422,6 +422,7 @@ footer {
         min-height: 100vh;
         padding-top: 70px;
         background-color:#2C3639;
+        transition: all 0.5s;
     }
     
     .respons-nav a {
@@ -441,6 +442,10 @@ footer {
     
     .respons-nav a:hover {
         background-color: dimgrey;
+    }
+
+    .respons-nav.is-active {
+        left: 0;
     }
     .content {
         margin-top: 3.1rem;

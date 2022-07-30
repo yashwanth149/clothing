@@ -8,7 +8,7 @@ const fullBar = document.querySelector('.respons-nav');
 
 menuBtn.addEventListener('click', () =>  {
   menuBtn.classList.toggle('is-active');
-  fullBar.style.left = 0;
+  fullBar.classList.toggle('is-active');
 });
 
 
