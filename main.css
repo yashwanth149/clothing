@@ -1,5 +1,6 @@
 *,*:after,*:before {
     box-sizing: border-box;
+
 }
 
 body {
@@ -19,16 +20,15 @@ h1,h2,h3,h4,h5,h6 {
     justify-content: space-between;
     flex-basis: 100px;
     padding: 0px 2rem;
+    width: 100%;
     font-family: 'Titan One', cursive;
     color: #fff;
     background-color: #000;
     position: fixed;
     top: 63px;
-    width: 100%;
     z-index: 1;
     margin-top: -4.2rem;
     box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
-
 }
 
 .flex1 input {
@@ -57,7 +57,7 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 3px;
 }
 
-.flex1 button{
+.flex1 button,.respons-box{
     display: none;
 }
 
@@ -96,7 +96,7 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 100%;
     background-image: url('https://th.bing.com/th/id/R.595125b66ce9b9d727827fce5519f155?rik=AflzumOJeIUw%2fQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-CkerHiixlNA%2fTckqOBF80fI%2fAAAAAAAAAIk%2f7BQC0j0q0Yo%2fs1600%2ftop_fashion_modles_1440ST_7019.jpg&ehk=ybqai28HNz7zuzKlYO81GAjchSsy3GmkMHDCe%2fBXVBg%3d&risl=&pid=ImgRaw&r=0');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     height: 100%;
     margin-top: 4.3rem;
     letter-spacing: 2px;
@@ -367,9 +367,10 @@ footer {
 @media screen and (max-width:700px) {
     .flex1 {
         position: fixed;
+        width: 100%;
         max-width: 100%;
         z-index: 99;
-        top: 66px;
+        top: 67px;
     }
     .flex1 h2{
         margin: 20px 0 20px -12px;
@@ -377,6 +378,15 @@ footer {
         text-transform: uppercase;
         letter-spacing: 4px;
     }
+    .respons-box {
+        position: relative;
+        z-index: 3;
+        color: #fff;
+        top: 70%;
+        left: 20px;
+        display: inline-block;
+    }
+
     .flex2 {
         display: none;
     }
@@ -456,16 +466,19 @@ footer {
         left: 0;
     }
     .content {
-        margin-top: 0rem;
+        margin: 0;
+        width: 100%;
         height: 100vh;
-        background: url("https://images.unsplash.com/photo-1501441858156-e505fb04bfbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=424&q=80") no-repeat;
+        background-image: url('https://images.unsplash.com/photo-1515469446389-74ef48ae90b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
         background-size: cover;
-        background-position: bottom center;
+        background-position: left top;
+
     }
+
     .content .container {
         position: relative;
         top: 20%;
-        left: 52%;
+        left: 0%;
         height: 180px;
         display: none;
     }
@@ -482,20 +495,31 @@ footer {
         width: 23px;
         border-bottom: 2px solid orange;
     }
+
+    .respons-box span{
+        font-weight: bold;
+    }
+
+    .respons-box p {
+        font-size: 28px;
+        font-weight: 100;
+        letter-spacing: 0;
+    }
+
     .maincontainer {
         display: block;
         margin-top: 1.4rem;
         margin-bottom: 3rem;
-        width: 75%;
-        
+        width: 84%;
+
     }
     .maincontainer .container2 {
-        height: 460px;
+        height: 430px;
         width: 100%;
         margin-top: 2rem;
         margin-bottom: 0;
         box-shadow: 10px 14px 12px rgba(0 0 0/0.9);
-        background-position: top;
+        background-position: bottom center;
     }
     
     .container2 .content2 h2 {
@@ -509,7 +533,7 @@ footer {
         word-spacing: 4px;
     }
     .container2:hover .content2{
-        top: 280px;
+        top: 240px;
     }
     .newarrival {
         width: 490px;
@@ -529,7 +553,7 @@ footer {
     }
 
     .grid .cart {
-        width: 370px !important;
+        width: 340px !important;
     }
     .info-offer {
         top: 18%;
