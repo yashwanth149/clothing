@@ -59,6 +59,7 @@ h1,h2,h3,h4,h5,h6 {
 .flex1 button{
     display: none;
 }
+
 .flex2 {
     max-width: 100%;
     display: flex;
@@ -379,6 +380,10 @@ footer {
     }
     .flex2 {
         display: none;
+    }
+
+    .flex1 button{
+        display: block;
     }
 
     .burgur{
