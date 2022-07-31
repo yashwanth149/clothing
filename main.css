@@ -191,9 +191,9 @@ h1,h2,h3,h4,h5,h6 {
 
 .w3-bg2 {
     position: relative;
-    background-image: url("https://images.unsplash.com/photo-1512850692650-c382e34f7fb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFsZSUyMG1vZGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
-    background-size: 140%;
-    background-position:  center ;
+    background-image: url("https://www.apetogentleman.com/wp-content/uploads/2021/12/malemodelsinstagram4.jpg");
+    background-size: cover;
+    background-position: center top;
     background-repeat: no-repeat;
     /*https://images.unsplash.com/photo-1512850692650-c382e34f7fb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFsZSUyMG1vZGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60
         ./charan2.jpeg
@@ -383,8 +383,8 @@ footer {
         position: relative;
         z-index: 3;
         color: #fff;
-        top: 83%;
-        left: 20px;
+        top: 75%;
+        left: 26px;
         display: inline-block;
     }
 
@@ -499,11 +499,23 @@ footer {
     .respons-box .font-normal{
         font-weight: 700;
         font-size: 39px;
-        color: red;
+        color: #fff;
+    }
+
+    .respons-box::before {
+        content: '';
+        display: block;
+        position: relative;
+        top: 30px;
+        right: 17%;
+        width: 68px;
+        height: .7rem;
+        transform: rotate(90deg);
+        background-color: red;
     }
 
     .respons-box p {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 300;
         letter-spacing: 2px;
         margin-top: -12px;
@@ -522,18 +534,22 @@ footer {
         margin-top: 2rem;
         margin-bottom: 0;
         box-shadow: 10px 14px 12px rgba(0 0 0/0.9);
-        background-position: bottom center;
+        background-size: cover;
+        background-position: top center;
     }
     
     .container2 .content2 h2 {
         font-size: 26px;
+        font-weight: 700;
+        color: red;
     }
 
     .container2 .content2 p {
-        font-size: 9px;
-        line-height: 13px;
-        letter-spacing: 2px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0px;
         word-spacing: 4px;
+        color: #000;
     }
     .container2:hover .content2{
         top: 240px;
@@ -579,10 +595,14 @@ footer {
         margin-top: 4rem;
     }
     .ourgallery .w3-heading {
-        font-size: 22px;
+        font-size: 26px;
         letter-spacing: normal;
         margin-left: 0;
         text-align: left;
+        color: red;
+        font-weight: bold;
+        text-transform: uppercase;
+        word-spacing: 8px;
     }
     .ourgallery .grid {
         grid-template-columns: repeat(1,1fr);
